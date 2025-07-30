@@ -5,7 +5,7 @@
 int keep_running = 3;
 
 void handle_sigint(int sig) {
-    printf("\nReceived interrupt signal. Exiting...v12\n");
+    printf("\nReceived interrupt signal. Exiting...v13\n");
     fflush(stdout);  // Make sure message is printed
     keep_running = 0;
 }
