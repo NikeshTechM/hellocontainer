@@ -5,7 +5,7 @@
 int keep_running = 3;
 
 void handle_sigint(int sig) {
-    printf("\nReceived interrupt signal. Exiting...v16\n");
+    printf("\nReceived interrupt signal. Exiting...v17\n");
     fflush(stdout);  // Make sure message is printed
     keep_running = 0;
 }
@@ -14,7 +14,7 @@ int main() {
     signal(SIGINT, handle_sigint);
 
     while (keep_running) {
-        printf("Hello from container v1.4\n");
+        printf("Hello from container v1.5\n");
         fflush(stdout);  // Flush output immediately
         sleep(1);
     }
